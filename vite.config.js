@@ -5,14 +5,16 @@ export default defineConfig({
     plugins: [
         symfonyPlugin()
     ],
-    base: './',
+    base: '/app/build',
     build: {
-        outDir: './public',
-        emptyOutDir: false,
+        outDir: './public/app/build',
+        assetsDir: './assets',
+        emptyOutDir: true,
+        cssCodeSplit: true,
         rollupOptions: {
             input: {
                 app: "./app/js/app.js",
-                main: "./app/scss/main.scss"
+                theme: "./app/scss/main.scss"
             },
         }
     },

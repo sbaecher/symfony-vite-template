@@ -1,12 +1,14 @@
 {
     "extends": [
         "stylelint-config-recommended",
-        "stylelint-config-sass-guidelines"
+        "stylelint-config-sass-guidelines",
+        "stylelint-config-rational-order-fix"
     ],
     "plugins": [
         "stylelint-scss",
         "stylelint-order",
-        "stylelint-config-rational-order/plugin"
+        "stylelint-rational-order-plugin",
+        "stylelint-config-rational-order-fix/plugin"
     ],
     "rules": {
         "indentation": 4,
@@ -25,6 +27,7 @@
         "string-quotes": "single",
         "declaration-empty-line-before": "never",
         "selector-max-compound-selectors": 4,
-        "selector-no-qualifying-type": null
+        "selector-no-qualifying-type": null,
+	"no-empty-source": null
     }
 }

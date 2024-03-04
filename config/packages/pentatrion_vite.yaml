@@ -1,6 +1,6 @@
 pentatrion_vite:
-  public_dir: /public
-  base: ./
+  public_directory: /public/app/build
+  build_directory: ./
   proxy_origin:
   throw_on_missing_entry: false
   script_attributes:
