@@ -1,0 +1,35 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build && sudo chown -R www-data:www-data ./ && sudo chmod -R 775 ./ && sudo -u www-data php8.2 bin/console cache:clear",
+        "preview": "vite preview",
+        "lint:js": "eslint --ext .js ./app/js/",
+        "lint:fix-js": "eslint --ext .js ./app/js/ --fix",
+        "lint:scss": "stylelint app/scss/**/*.scss",
+        "lint:fix-scss": "stylelint app/scss/**/*.scss --fix"
+    },
+    "license": "UNLICENSED",
+    "devDependencies": {
+        "eslint": "^8.56.0",
+        "eslint-config-airbnb": "^19.0.4",
+        "eslint-config-standard": "^17.1.0",
+        "eslint-plugin-import": "^2.29.1",
+        "eslint-plugin-n": "^16.6.2",
+        "eslint-plugin-promise": "^6.1.1",
+        "stylelint": "^15.10.3",
+        "stylelint-config-rational-order": "^0.0.4",
+        "stylelint-config-rational-order-fix": "^0.1.9",
+        "stylelint-config-recommended": "^13.0.0",
+        "stylelint-config-sass-guidelines": "^10.0.0",
+        "stylelint-config-standard": "^34.0.0",
+        "stylelint-order": "^6.0.3",
+        "stylelint-rational-order-plugin": "^1.0.2",
+        "stylelint-scss": "^5.1.0",
+        "vite": "^5.2.11",
+        "vite-plugin-symfony": "^6.4.7"
+    },
+    "dependencies": {
+        "sass": "^1.66.1"
+    }
+}

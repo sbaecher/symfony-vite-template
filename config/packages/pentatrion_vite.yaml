@@ -1,0 +1,17 @@
+pentatrion_vite:
+  public_directory: /public/app/build
+  proxy_origin:
+  throw_on_missing_entry: false
+  default_config: config_default
+
+  configs:
+    config_default:
+      build_directory: ./
+      script_attributes:
+      link_attributes:
+
+framework:
+  assets:
+    packages:
+      vite:
+        version_strategy: 'Pentatrion\ViteBundle\Asset\ViteAssetVersionStrategy'

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>{% block title %}Symfony Vite Base{% endblock %}</title>
+
+        {% block stylesheets %}
+            {{ vite_entry_link_tags('app') }}
+        {% endblock %}
+
+        {% block javascripts %}
+            {{ vite_entry_script_tags('app', { attr: { defer: 'defer'} }) }}
+        {% endblock %}
+    </head>
+    <body>
+
+        {% block header %}
+            {% include 'layout/header.html.twig' %}
+        {% endblock %}
+
+        {% block body %}
+        {% endblock %}
+
+        {% block footer %}
+            {% include 'layout/footer.html.twig' %}
+        {% endblock %}
+
+    </body>
+</html>
