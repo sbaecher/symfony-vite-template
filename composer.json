@@ -1,6 +1,6 @@
 {
-    "name": "templates/symfony-vite-template"
-    "version": "0.1.0"
+    "name": "templates/symfony-vite-template",
+    "version": "1.0.0",
     "type": "project",
     "license": "MIT",
     "minimum-stability": "stable",
